@@ -1,0 +1,65 @@
+@font-face {
+font-family:"socicon";
+src:url(../font/socicon/socicon-webfont.eot);
+src:url(../font/socicon/socicon-webfont.eot?#iefix) format("embedded-opentype"),url(../font/socicon/socicon-webfont.woff) format("woff"),url(../font/socicon/socicon-webfont.ttf) format("truetype"),url(../font/socicon/socicon-webfont.svg#sociconregular) format("svg");
+font-weight:400;
+font-style:normal
+}
+
+html {
+background:url(../img/background.jpg) no-repeat center center fixed;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover
+}
+
+body {
+font-family:Arial,Helvetica,sans-serif
+}
+
+.content {
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:#949494
+}
+
+.center {
+text-align:center;
+}
+
+.footer {
+position:fixed;
+left:0;
+bottom:0;
+height:49px;
+width:100%;
+background:#fdb813;
+opacity:.8;
+text-align:center;
+vertical-align:middle;
+line-height:49px;
+font-size:10px
+}
+
+.footer .column-left {
+float:left;
+width:33%
+}
+
+.footer .column-center {
+display:inline-block;
+width:33%
+}
+
+.footer .column-right {
+float:right;
+width:33%
+}
+
+.socicon {
+margin:0 5px;
+font:14px "socicon"!important
+}
