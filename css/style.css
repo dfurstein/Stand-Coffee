@@ -1,65 +1,132 @@
 @font-face {
-font-family:"socicon";
-src:url(../font/socicon/socicon-webfont.eot);
-src:url(../font/socicon/socicon-webfont.eot?#iefix) format("embedded-opentype"),url(../font/socicon/socicon-webfont.woff) format("woff"),url(../font/socicon/socicon-webfont.ttf) format("truetype"),url(../font/socicon/socicon-webfont.svg#sociconregular) format("svg");
-font-weight:400;
-font-style:normal
+  font-family:"socicon";
+  src:url(../font/socicon/socicon-webfont.eot);
+  src:url(../font/socicon/socicon-webfont.eot?#iefix) format("embedded-opentype"),url(../font/socicon/socicon-webfont.woff) format("woff"),url(../font/socicon/socicon-webfont.ttf) format("truetype"),url(../font/socicon/socicon-webfont.svg#sociconregular) format("svg");
+  font-weight:400;
+  font-style:normal
 }
 
-html {
-background:url(../img/background.jpg) no-repeat center center fixed;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover
+@-webkit-keyframes logoFade {
+0%,25%{opacity:1}
+75%{opacity:0}
+100%{opacity:0}
+}
+
+@-moz-keyframes logoFade {
+0%,25%{opacity:1}
+75%{opacity:0}
+100%{opacity:0}
+}
+
+@-o-keyframes logoFade {
+0%,25%{opacity:1}
+75%{opacity:0}
+100%{opacity:0}
+}
+
+@keyframes logoFade {
+0%,25%{opacity:1}
+75%{opacity:0}
+100%{opacity:0}
+}
+
+* {
+margin: 0;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
-font-family:Arial,Helvetica,sans-serif
+  background:url(../img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
 }
 
-.content {
-position:fixed;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-color:#949494
+.logo img {
+/*  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
-.center {
-text-align:center;
+.logo img.top {
+  -webkit-animation-name: logoFade;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+
+  -moz-animation-name: logoFade;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 5s;
+  -moz-animation-direction: alternate;
+
+  -o-animation-name: logoFade;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 5s;
+  -o-animation-direction: alternate;
+
+  animation-name: logoFade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+.information p {
+/*  position: absolute;
+  top:65%;
+  left:50%;
+  transform:translate(-65%,-50%);*/
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.wrapper {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -49px; 
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+}
+
+.footer, .wrapper:after {
+  /* .push must be the same height as footer */
+  height: 49px; 
 }
 
 .footer {
-position:fixed;
-left:0;
-bottom:0;
-height:49px;
-width:100%;
-background:#fdb813;
-opacity:.8;
-text-align:center;
-vertical-align:middle;
-line-height:49px;
-font-size:10px
-}
-
-.footer .column-left {
-float:left;
-width:33%
-}
-
-.footer .column-center {
-display:inline-block;
-width:33%
-}
-
-.footer .column-right {
-float:right;
-width:33%
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  text-align:center;
+  vertical-align:middle;
+  line-height:49px;
+  background-color: #fdb813;
+  opacity: .7;
 }
 
 .socicon {
-margin:0 5px;
-font:14px "socicon"!important
+  margin:0 5px;
+  font:14px "socicon"!important
 }
