@@ -46,14 +46,32 @@ body {
   background-size:cover;
 }
 
-.logo img {
-/*  position: absolute;
+.wrapper {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -49px; 
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+}
+
+.wrapper .container {
+  position: absolute;
   top:50%;
   left:50%;
-  transform:translate(-50%,-50%);*/
-    display: block;
+  transform:translate(-50%,-50%);
+}
+
+.logo img {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+/*    display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
 
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -87,27 +105,9 @@ body {
   animation-direction: alternate;
 }
 
-.information p {
-/*  position: absolute;
-  top:65%;
-  left:50%;
-  transform:translate(-65%,-50%);*/
-
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-.wrapper {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -49px; 
-}
-
-.wrapper:after {
-  content: "";
-  display: block;
+.information {
+  position: relative;
+  top: 125px;
 }
 
 .footer, .wrapper:after {
