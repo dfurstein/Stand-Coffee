@@ -36,6 +36,8 @@ margin: 0;
 
 html, body {
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
 }
 
 body {
@@ -61,6 +63,10 @@ body {
   position: absolute;
   top:50%;
   left:50%;
+
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
 }
 
@@ -68,46 +74,49 @@ body {
   position: absolute;
   top:50%;
   left:50%;
+  
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
-/*    display: block;
-    margin-left: auto;
-    margin-right: auto;*/
 
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+
+  margin:0px auto;"
 }
 
 .logo img.top {
   -webkit-animation-name: logoFade;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 3s;
   -webkit-animation-direction: alternate;
 
   -moz-animation-name: logoFade;
   -moz-animation-timing-function: ease-in-out;
   -moz-animation-iteration-count: infinite;
-  -moz-animation-duration: 5s;
+  -moz-animation-duration: 3s;
   -moz-animation-direction: alternate;
 
   -o-animation-name: logoFade;
   -o-animation-timing-function: ease-in-out;
   -o-animation-iteration-count: infinite;
-  -o-animation-duration: 5s;
+  -o-animation-duration: 3s;
   -o-animation-direction: alternate;
 
   animation-name: logoFade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-direction: alternate;
 }
 
 .information {
   position: relative;
-  top: 125px;
+  top: 155px;
 }
 
 .footer, .wrapper:after {
@@ -117,8 +126,6 @@ body {
 
 .footer {
   font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #000000;
   text-align:center;
   vertical-align:middle;
   line-height:49px;
@@ -129,4 +136,9 @@ body {
 .socicon {
   margin:0 5px;
   font:14px "socicon"!important
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
 }
