@@ -51,7 +51,7 @@ body {
 .wrapper {
   min-height: 100%;
   /* equal to footer height */
-  margin: 0 auto -49px; 
+  margin: 0 auto -150px; 
 }
 
 .wrapper:after {
@@ -112,26 +112,30 @@ body {
   animation-direction: alternate;
 }
 
-.information {
+/*.information {
   position: relative;
   top: 155px;
-}
+}*/
 
 .footer, .wrapper:after {
   /* .push must be the same height as footer */
-  height: 49px; 
+  height: 150px; 
 }
 
-.footer {
+.footer .row {
+  height: 49px;
   font-size: 0.625em;
   text-align:center;
   vertical-align:middle;
   line-height:45px;
   background-color: #fdb813;
   opacity: .7;
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
 }
 
-.footer a {
+.footer .row a {
   text-decoration: none;
 }
 
