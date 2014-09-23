@@ -1,7 +1,7 @@
 @font-face {
   font-family:"socicon";
-  src:url(../font/socicon/socicon-webfont.eot);
-  src:url(../font/socicon/socicon-webfont.eot?#iefix) format("embedded-opentype"),url(../font/socicon/socicon-webfont.woff) format("woff"),url(../font/socicon/socicon-webfont.ttf) format("truetype"),url(../font/socicon/socicon-webfont.svg#sociconregular) format("svg");
+  src:url(../fonts/socicon/socicon-webfont.eot);
+  src:url(../fonts/socicon/socicon-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/socicon/socicon-webfont.woff) format("woff"),url(../fonts/socicon/socicon-webfont.ttf) format("truetype"),url(../fonts/socicon/socicon-webfont.svg#sociconregular) format("svg");
   font-weight:400;
   font-style:normal
 }
@@ -51,7 +51,7 @@ body {
 .wrapper {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -49px; 
+  margin: 0 auto -49px; 
 }
 
 .wrapper:after {
@@ -84,8 +84,6 @@ body {
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-
-  margin:0px auto;"
 }
 
 .logo img.top {
@@ -125,17 +123,29 @@ body {
 }
 
 .footer {
-  font-size: 10px;
+  font-size: 0.625em;
   text-align:center;
   vertical-align:middle;
-  line-height:49px;
+  line-height:45px;
   background-color: #fdb813;
   opacity: .7;
 }
 
+.footer a {
+  text-decoration: none;
+}
+
 .socicon {
+  color: #000000;
   margin:0 5px;
-  font:14px "socicon"!important
+  font-size: 1.5em;
+  font-family: 'socicon' !important;
+}
+
+.glyphicon-envelope {
+  color: #000000;
+  margin:0 5px;
+  font-size: 1.5em;
 }
 
 .lato {
