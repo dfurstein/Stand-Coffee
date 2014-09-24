@@ -135,6 +135,7 @@ body {
   text-align:center;
   vertical-align:middle;
   line-height:45px;
+  color: #000000;
   background-color: #fdb813;
   opacity: .7;
   position: absolute; 
@@ -143,19 +144,18 @@ body {
 }
 
 .bottom a {
+  color: #000000;
   text-decoration: none;
 }
 
 .socicon {
-  color: #000000;
-  margin:0 5px;
+  margin:0 10px;
   font-size: 1.5em;
   font-family: 'socicon' !important;
 }
 
 .glyphicon-envelope {
-  color: #000000;
-  margin:0 5px;
+  margin:0 10px;
   font-size: 1.5em;
 }
 
